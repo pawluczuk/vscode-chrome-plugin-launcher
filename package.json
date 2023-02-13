@@ -1,0 +1,46 @@
+{
+	"name": "chrome-plugin-loader",
+	"displayName": "Run Chrome extension from VSCode",
+	"description": "Using Chromium, install your Chrome extension and run selected website",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.74.0"
+	},
+	"categories": [
+		"Extension Packs"
+	],
+	"keywords": ["Chrome", "plugin", "Chromium", "extension"],
+	"activationEvents": [],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "chrome-plugin-loader.loadPlugin",
+				"title": "Run Chrome extension from VSCode"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"lint": "eslint src --ext ts"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.2.0",
+		"@types/node": "^16.18.12",
+		"@types/puppeteer": "^7.0.4",
+		"@types/vscode": "^1.69.0",
+		"@typescript-eslint/eslint-plugin": "^5.27.0",
+		"@typescript-eslint/parser": "^5.27.0",
+		"@vscode/test-electron": "^2.1.3",
+		"eslint": "^8.16.0",
+		"glob": "^8.0.3",
+		"puppeteer": "^19.6.3",
+		"typescript": "^4.9.4"
+	},
+	"dependencies": {
+		"puppeteer": "^19.6.3"
+	}
+}
