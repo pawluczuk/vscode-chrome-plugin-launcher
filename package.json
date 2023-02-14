@@ -2,7 +2,7 @@
 	"name": "chrome-plugin-loader",
 	"displayName": "Run Chrome extension from VSCode",
 	"description": "Using Chromium, install your Chrome extension and run selected website",
-	"version": "0.0.1",
+	"version": "0.0.3",
 	"engines": {
 		"vscode": "^1.74.0"
 	},
