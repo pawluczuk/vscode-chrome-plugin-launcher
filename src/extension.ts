@@ -1,5 +1,5 @@
 import * as vscode from 'vscode';
-import { openSettings }from './pups';
+import { openSettings }from './chrome';
 
 export function activate(context: vscode.ExtensionContext) {
 	const loadPlugin = vscode.commands.registerCommand('chrome-plugin-loader.loadPlugin', async () => {
